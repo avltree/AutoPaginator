@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  php:
+    build: .
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: test
+    volumes:
+      - .:/paginator
+    tty: true
